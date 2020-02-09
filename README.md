@@ -1,9 +1,9 @@
 # wolt-summer-2020 Frontend assignment
-https://github.com/woltapp/summer2020
+Assignment description: https://github.com/woltapp/summer2020
 
 The project is hosted on Heroku https://wolt-summer2020.herokuapp.com/
 
-To run the project locally:
+## To run the project locally:
 
 1. Clone the project to your computer
 2. In the project directory, install dependencies by running 
@@ -14,7 +14,7 @@ To run the project locally:
 
 ### `yarn start`
 
-To run tests:
+## To run tests:
 
 In the project folder, run 
 
