@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-//import { Blurhash } from "react-blurhash";
+import React, { useState } from 'react'
+import { Blurhash, BlurhashCanvas } from "react-blurhash"
 
-import './App.css';
-import restaurantData from './restaurants.json';
-
+import './App.css'
+import restaurantData from './restaurants.json'
 
 const App = () => {
 
-  const alphabetical = (a, b) => {
-    const nameA = a.name.toUpperCase();
-    const nameB = b.name.toUpperCase();
-
-    if (nameA > nameB) return 1;
-    else return -1;
-  }
-
   const [restaurants, setRestaurants] = useState(restaurantData.restaurants)
+  const [loading, setLoading] = useState(true)
+
+  const alphabetical = (a, b) => {
+    const nameA = a.name.toUpperCase()
+    const nameB = b.name.toUpperCase()
+
+    if (nameA > nameB) return 1
+    else return -1
+  }
 
   const handleSortAscending = () => {
     setRestaurants([...restaurants.sort(alphabetical)])
@@ -23,6 +23,10 @@ const App = () => {
 
   const handleSortDescending = () => {
     setRestaurants([...restaurants.sort(alphabetical).reverse()])
+  }
+
+  const handleLoad = () => {
+    setLoading(false)
   }
 
   return (
@@ -50,11 +54,16 @@ const App = () => {
           <div key={restaurant.name} className="col-md-4">
             <div className="card mb-4 shadow-sm">
               <img 
-              alt={""}
-              width="100%" 
-              height="225" 
-              src={restaurant.image} 
+                alt={""}
+                height={225}
+                src={restaurant.image} 
+                onLoad={handleLoad}
               />
+              { loading &&
+                <BlurhashCanvas
+                hash={restaurant.blurhash}
+                height={225}
+                /> }
               <div className="card-body">
                 <h5 className="card-text text-center">{restaurant.name}</h5>
                 <div className="d-flex flex-column justify-content-between align-items-center">
