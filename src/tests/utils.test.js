@@ -9,7 +9,7 @@ afterEach(cleanup)
 describe('alphabeticalCompare', () => {
   const fakeRestaurantArray = [{"name": "b"}, {"name": "c"}, {"name": "a"}, {"name": "c"}];
 
-  it('sorts correctly', () => {
+  test('sorts correctly', () => {
     const correct = [{"name": "a"}, {"name": "b"}, {"name": "c"}, {"name": "c"}];
     const unsorted = [...fakeRestaurantArray];
     const sorted = fakeRestaurantArray.sort(alphabeticalCompare);
