@@ -3,7 +3,7 @@ https://github.com/woltapp/summer2020
 
 The project is hosted on Heroku https://wolt-summer2020.herokuapp.com/
 
-To run the project locally
+To run the project locally:
 
 1. Clone the project to your computer
 2. In the project directory, install dependencies by running 
@@ -14,7 +14,7 @@ To run the project locally
 
 ### `yarn start`
 
-To test
+To run tests:
 
 In the project folder, run 
 
