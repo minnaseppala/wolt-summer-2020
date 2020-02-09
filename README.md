@@ -1,22 +1,19 @@
-# wolt-summer-2020
+# wolt-summer-2020 Frontend assignment
 https://github.com/woltapp/summer2020
 
 
-To run the project locally
+# To run the project locally
 
 1. Clone the project to your computer
-2. Install dependencies by running 
+2. In the project directory, install dependencies by running 
 
 ### `yarn install`
 
-in the console
-(You might have to install yarn first)
-
-3. Run local server in the browser ( http://localhost:3000/ ) with the command
+3. Run local server ( http://localhost:3000/ ) with the command
 
 ### `yarn start`
 
-To test
+# To test
 
 In the project folder, run 
 
