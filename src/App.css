@@ -6,9 +6,5 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  border-bottom: 1px solid rgb(230, 230, 230);
-}
-
-.card {
-  height: 22rem;
+  border-bottom: 1px solid #eeeeee;
 }
