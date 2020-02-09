@@ -1,4 +1,4 @@
-# wolt-summer-2020
+# wolt-summer-2020 Frontend assignment
 https://github.com/woltapp/summer2020
 
 
